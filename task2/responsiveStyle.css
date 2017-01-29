@@ -10,7 +10,7 @@ img {
     width: 100%;
 }
 
-@media (max-width: 816px) {
+@media (max-width: 832px) {
     .page-wrap > h1, .page-wrap > p {
         text-align: center;
     }
