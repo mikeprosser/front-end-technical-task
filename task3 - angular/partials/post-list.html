@@ -1,0 +1,7 @@
+<div ng-init="init();">
+    <p ng-if="!loaded">loading...</p>
+    <div ng-repeat="post in posts" ng-show="!currentOpenPost">
+        <a href="#/posts/{{post.id}}">{{post.title}}</a>
+        <hr ng-if="$index !== posts.length - 1"/>
+    </div>
+</div>

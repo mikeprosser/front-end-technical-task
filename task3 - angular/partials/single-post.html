@@ -1,0 +1,18 @@
+<div ng-init="init();">
+    <a href="#/posts">Back</a>
+    <p ng-if="!loaded">loading...</p>
+    <h3>{{post.title}}</h3>
+    <p>{{post.body}}</p>
+    <hr />
+    <div>
+        Comments
+        <hr />
+        <p ng-if="!commentsLoaded">loading...</p>
+        <div ng-repeat="comment in comments">
+            <h5>{{comment.name}}</h5>
+            <p>{{comment.body}}</p>
+            <p> - {{comment.email}}</p>
+            <br />
+        </div>
+    </div>
+</div>
